@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+  }
+  .bg{
+    background: url(Black\ book.jpg) no-repeat center center / cover;   
+    background-color: #cccccc;
+    height: 100%;
+    position: relative;
+  }
+  h1{
+    margin: 50px;
+    font-family: "poppins";
+    color: #ccc;
+    font-size: 60px;
+    text-align: center;
+}
+
+.title {
+    animation-name: title;
+    animation-duration: 4s;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    float: right;
+}
+
+
+li {
+    display: inline-block;
+}
+
+li a {
+    padding: 10px;
+    text-decoration: none;
+    font-family: "B612";
+    color:#fff;
+    font-size: 16px;
+    transition: .3s;
+}
+
+a:hover {
+    font-size: 15px;
+    color:hotpink ;
+}
+
+.para {
+    margin: 45px;
+    line-height: 1.75;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 100px;
+    color: #fff;
+    
+}
+
+.btn {
+    margin-left: 50px;
+    padding: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    background: none;
+    border-radius: 20px;
+    transition: .2s ease;
+}
+
+.btn:hover {
+    border: 1px solid #ccc;
+    transform: scale(0.98);
+}
+
+.image1 {
+    filter: grayscale(100%);
+    width: 550px;
+    border-radius: 100px 0px 100px 0px;
+    transition: .3s;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+.image1:hover {
+    transform: scale(1.10);
+    filter: grayscale(0%);
+}
+
+.active {
+    background: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    animation-name: login;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes login {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: #ccc;
+    }
+
+    50% {
+        color: hotpink;
+    }
+
+    75% {
+        color: lightseagreen;
+    }
+
+    100% {
+        color: rgb(14, 37, 240);
+    }
+}

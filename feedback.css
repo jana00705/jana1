@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=B612&family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+.bg {
+  background-image: url(Black\ book.jpg);
+  background-color: #cccccc;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+h1 {
+  margin: 30px;
+  font-family: "poppins";
+  color: #ccc;
+  font-size: 60px;
+  text-align: center;
+}
+
+.navigation {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  float: right;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  padding: 10px;
+  text-decoration: none;
+  font-family: "B612";
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+a:hover {
+  font-size: 15px;
+  color: hotpink;
+}
+
+.active {
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  animation-name: login;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.stfb {
+  margin: 70px;
+  font-family: "roboto";
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input {
+  margin: 18px;
+}
+
+#stfb {
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px #000000;
+}
+#button {
+  padding: 5px;
+  width: 100px;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  transition: 0.2s;
+  margin-right: 20px;
+}
+.button {
+  text-align: center;
+  margin-top: 75px;
+}
+#button:hover {
+  color: #000;
+  background-color: #30bd35;
+}
+
+#reset {
+  padding: 5px;
+  width: 80px;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+#reset:hover {
+  color: #000;
+  background-color: #d14242;
+}
+
+
+
+@keyframes login {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: black;
+  }
+
+  50% {
+    color: hotpink;
+  }
+
+  75% {
+    color: lightseagreen;
+  }
+
+  100% {
+    color: yellow;
+  }
+}
+h4{
+   margin-top:40px ;
+    color: tomato;
+    
+}

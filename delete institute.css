@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=B612&family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+.bg {
+  background-image: url(Black\ book.jpg);
+  background-color: #cccccc;
+  height: 625px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+h1 {
+  margin: 30px;
+  font-family: "poppins";
+  color: #ccc;
+  font-size: 60px;
+  text-align: center;
+}
+
+.navigation {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  float: right;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  padding: 10px;
+  text-decoration: none;
+  font-family: "B612";
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.navigation a:hover {
+  font-size: 15px;
+  color: hotpink;
+}
+
+.active {
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  animation-name: login;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+
+#table{
+    text-align: center;
+    width:80%;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 160px;
+    margin-left: 140px;
+}
+.table{
+    text-align: center;
+    margin: 80px;
+    color: rgb(255, 255, 255);
+    
+   
+}
+
+#delins{
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px #000000;
+    margin-bottom: 50px;
+  }
+
+@keyframes login {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: whitesmoke;
+    }
+
+    50% {
+        color: hotpink;
+    }
+
+    75% {
+        color: lightseagreen;
+    }
+
+    100% {
+        color: yellow;
+    }
+}
+#head{
+color: #f3971b;
+}
