@@ -143,3 +143,20 @@ text-align: center;
 #pn{
    margin-right: 5%;
 }
+.box{
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+span{
+  color:red;
+  
+  font-size:small;
+
+  text-align: center;
+ 
+}
+

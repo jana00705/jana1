@@ -57,53 +57,57 @@
 
  <tr><td></td></tr>   
 <tr>
-    <td align="center">&nbsp;&nbsp;
-        <div class="clg_registration">
-        <label for="faname">Faculty Name :
-             </label>
-        <input type="text" id="fan" name="faname"><br><br>&nbsp;&nbsp;
-        <label for="qua">Qualification :
-             </label>
-        <input type="text" id="qua" name="qualification"><br><br>
-     <div id="exp">
-        <label for="exp">Experience :
-           
-        </label>
-        <select name="experience" id="exp">
-         <option value="none">none</option>   
-         <option value="1">1</option>
-         <option value="2" selected>2</option>   
-         <option value="3">3</option> 
-         <option value="4">4</option>
-         <option value="5">5</option>
-         <option value="6">6</option>   
-         <option value="7">7</option> 
-         <option value="8">8</option>
-         <option value="9">9</option>
-         <option value="10">10</option>   
+  <td align="center">&nbsp;&nbsp;
+    <form class="box">
+      <div class="clg_registration">
+      <label for="faname">Faculty Name :</label>
+      <input type="text" id="fan" name="faname"><br>&nbsp;&nbsp;
+     <span id="faerr"></span><br>
+      <label for="qua">Qualification :
+           </label>
+      <input type="text" id="qua" name="qualification"><br>
+      <span id="querr"></span><br>
+      <div id="exp">
+      <label for="exp">Experience :
          
-        </select>
-     </div>
+      </label>
+      <select name="experience" id="exp">
+       <option value="none">none</option>   
+       <option value="1">1</option>
+       <option value="2" selected>2</option>   
+       <option value="3">3</option> 
+       <option value="4">4</option>
+       <option value="5">5</option>
+       <option value="6">6</option>   
+       <option value="7">7</option> 
+       <option value="8">8</option>
+       <option value="9">9</option>
+       <option value="10">10</option>   
        
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;
-   <br><br> <label for="st">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skill Set :
-        </label>
-    <input type="text" id="st" name="skill"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
+      </select>
+   </div>
+     
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+ <br> <label for="st">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skill Set :
+      </label>
+  <input type="text" id="st" name="skill"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <span id="skillerr"></span><br>
+</div>
 </td>   
-  
+
 </tr>
 <tr><td></td></tr>  
 <tr>
     <td align="center">
         <div class="update">
-            <button id="update"type="submit" >Update</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="update"type="submit" onclick="return check()">Update</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
            
         </div>
         
     </td>
 </tr>
+</form>
 <tr><td></td></tr>
 <tr><td></td></tr>
 
@@ -120,6 +124,6 @@
 <tr><td></td></tr>  
     
 </table>
-   
+<script src="Update faculty.js"></script> 
 </body>
 </html>

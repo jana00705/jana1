@@ -169,3 +169,12 @@ input {
   width: 200px;
   border-color: #4c6cd6;
 }
+span{
+  color:red;
+  
+  font-size:small;
+
+  text-align: center;
+ 
+}
+

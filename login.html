@@ -59,12 +59,14 @@
  <tr><td></td></tr>   
 <tr>
     <td>
-      <form class="box" action="login.html" method="POST">
+      <form class="box" name="box" >
+  
+      <input  type="text"   name="username" id="username" placeholder="User Name" autocomplete="off">&nbsp;&nbsp;
+      <span id=usererr></span>
+     <br><br>
+      <input  type="password"  id="password" name="username" placeholder="Password">
+      <span id="passerr"></span>
      
-        <input  type="text"  name="input" placeholder="User Name" ><br><br>&nbsp;&nbsp;
-          <input  type="password" name="input" placeholder="Password">
-         
-    </form>
     </td>   
 </tr>
 <tr><td></td></tr>
@@ -72,23 +74,24 @@
   
     <td>
       <div class="button"> 
-        <button id="button" type="submit">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="button" type="submit" onclick="return check()">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button id="reset" type="reset">Reset</button>
 
       </div>
-       
+    
+        
+  </form>
     </td>
 </tr>
 <tr><td></td></tr>
 <tr><td></td></tr>
-
-
-
-</form>
-   
+  
 
 </table>
    <br><br><br>
   </div>
+  <script src="login.js">
+
+  </script>
 </body>
 </html>

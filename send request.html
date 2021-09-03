@@ -62,16 +62,17 @@
     <td align="center">
         <div class="sendreq">
         <label for="cn">Name : </label>
-        <input type="text" id="" name=""><br><br>&nbsp;&nbsp;
+        <input type="text" id="name" name=""><br>&nbsp;&nbsp;
+        <span id="nameerr"></span><br>
        <div id="clg">
         <label for="cun">College :</label>
-        <input type="text" id="" name=""><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      
+        <input type="text" id="college" name=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="collegeerr"></span><br>
        </div>
        <div id="req">
         <label for="cpa">Reqest For :</label>
-        <textarea name="Address" id="cpa" cols="35" rows="2"></textarea><br><br>
-    
+        <textarea name="Address" id="request" cols="35" rows="2"></textarea><br>
+        <span id="requesterr"></span><br>
        </div>
             </div>
     </td>
@@ -84,7 +85,7 @@
 <tr>
     <td align="center">
         <div class="button">
-            <button id="button"type="submit" >Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="button"type="submit" onclick="return check()" >Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button id="reset" type="reset">Reset</button>
     
         </div>
@@ -106,5 +107,6 @@
     
 </table>
    <br><br><br>
+   <script src="send request.js"></script>
 </body>
 </html>

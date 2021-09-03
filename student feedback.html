@@ -59,7 +59,8 @@
     <form class="stfb">
     <label for="fb">Feedback :
         <textarea name="fb" id="fb" cols="30" rows="3"></textarea>
-     </label>
+     </label><br>
+     <span id="feederr"></span>
      </form>
 </td></tr>
 <tr><td></td></tr>
@@ -67,7 +68,7 @@
 <tr>
     <td>
         <div class="button"> 
-          <button id="button" type="submit">Submit Feedback</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button id="button" type="submit" onclick="return check()">Submit Feedback</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <button id="reset" type="reset">Reset</button>
   
         </div>
@@ -89,6 +90,7 @@
 <tr><td></td></tr>  
     
 </table>
+<script src="student feedback.js"></script>
    
 </body>
 </html>

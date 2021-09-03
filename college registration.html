@@ -57,19 +57,24 @@
  <tr><td></td></tr>   
 <tr>
     <td align="center">
+      <form class="box">
         <div class="clg_registration">
             <label for="cn">College Name : </label>
-            <input type="text" id="cn" name="cnama"><br><br>&nbsp;&nbsp;
+            <input type="text" id="cn" name="cnama"><br>&nbsp;&nbsp;
+            <span id="cerr"></span><br>
             <label for="cun">User Name :</label>
-            <input type="text" id="cun" name="clg name"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="cun" name="clg name"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span id="usererr"></span><br>
             <label for="pw">Password : </label>
-            <input type="password" id="pw" name="password"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" id="pw" name="password"><br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span id="passerr"></span><br>
             <label for="cpa">College Postal Address :</label>
-           <textarea name="Address" id="cpa" cols="35" rows="2"></textarea><br><br>
+           <textarea name="Address" id="cpa" cols="35" rows="2"></textarea><br>
+           <span id="adderr"></span><br>
           <div id="pn">
             <label for="tel" >College Phone Number :</label>
-            <input type="tel" id="tel" min="10" max="10" name="phone" placeholder="phone number"><br><br>&nbsp;&nbsp;
-             
+            <input type="number" id="number"  name="number" placeholder="phone number"><br>&nbsp;&nbsp;
+             <span id="numbererr"></span><br>
           </div>
            
         
@@ -80,13 +85,14 @@
 <tr>
     <td align="center">
         <div class="button">
-            <button id="button"type="submit" >Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="button"type="submit" onclick="return check()" >Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button id="reset" type="reset">Reset</button>
     
         </div>
         
     </td>
 </tr>
+</form>
 <tr><td></td></tr>
 <tr><td></td></tr>
 
@@ -102,5 +108,8 @@
     
 </table>
    <br><br><br>
+   <script src="college registration.js">
+
+   </script>
 </body>
 </html>

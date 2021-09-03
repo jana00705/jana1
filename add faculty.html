@@ -58,14 +58,16 @@
  <tr><td></td></tr>   
 <tr>
     <td align="center">&nbsp;&nbsp;
+      <form class="box">
         <div class="clg_registration">
-        <label for="faname">Faculty Name :
-             </label>
-        <input type="text" id="fan" name="faname"><br><br>&nbsp;&nbsp;
+        <label for="faname">Faculty Name :</label>
+        <input type="text" id="fan" name="faname"><br>&nbsp;&nbsp;
+       <span id="faerr"></span><br>
         <label for="qua">Qualification :
              </label>
-        <input type="text" id="qua" name="qualification"><br><br>
-     <div id="exp">
+        <input type="text" id="qua" name="qualification"><br>
+        <span id="querr"></span><br>
+        <div id="exp">
         <label for="exp">Experience :
            
         </label>
@@ -87,10 +89,11 @@
        
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;
-   <br><br> <label for="st">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skill Set :
+   <br> <label for="st">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skill Set :
         </label>
-    <input type="text" id="st" name="skill"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
+    <input type="text" id="st" name="skill"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span id="skillerr"></span><br>
+  </div>
 </td>   
   
 </tr>
@@ -98,13 +101,14 @@
 <tr>
     <td align="center">
         <div class="button">
-            <button id="button"type="submit" >Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="button"type="submit" onclick="return check()">Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button id="reset" type="reset">Reset</button>
     
         </div>
         
     </td>
 </tr>
+</form>
 <tr><td></td></tr>
 <tr><td></td></tr>
 
@@ -121,6 +125,6 @@
 <tr><td></td></tr>  
     
 </table>
-   
+   <script src="add faculty.js"></script>
 </body>
 </html>
